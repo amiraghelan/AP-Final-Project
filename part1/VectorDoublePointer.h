@@ -33,7 +33,8 @@ public:
     {
         for (int i = 0; i < mSize; i++)
             delete arr[i];
-        delete[] arr;
+        
+        // delete[] arr;
     }
 
     // returns the length of the vector
