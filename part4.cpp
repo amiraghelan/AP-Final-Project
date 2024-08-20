@@ -1,34 +1,9 @@
 #include <iostream>
 #include <stdexcept>
-#include <ctime>
-#include <vector>
+
 #include "VectorDoublePointer.h"
 
 using namespace std;
-
-class TimerUtil{
-    
-    clock_t start;
-    clock_t end;
-public:
-    void startRecord(){start = clock();}
-    void stopRecord(){end = clock();}
-    clock_t timeDif(){return end-start;}
-    
-    long diffInCpuClocks(){
-        return (1000*(end-start))/CLOCKS_PER_SEC;
-    }
-
-};
-
-class Data{
-    std::vector<char> d;
-    public:
-    Data(int size) : d(size*1024*1024){}
-};
-
-
-
 
 int main()
 {   
